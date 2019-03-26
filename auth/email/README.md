@@ -202,7 +202,7 @@ def verify_email(token, email):
     my_data = dict()
     my_data["email"] = email
     my_data["idToken"] = token
-    my_data["requestType"] = "EMAIL_VERIFY"
+    my_data["requestType"] = "VERIFY_EMAIL"
 				
     json_data = json.dumps(my_data).encode()
     headers = {"Content-Type": "application/json"}		
