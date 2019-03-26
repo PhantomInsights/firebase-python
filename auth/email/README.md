@@ -243,7 +243,7 @@ def get_accountinfo(token, email):void
 			
     json_data = json.dumps(my_data).encode()
     headers = {"Content-Type": "application/json"}		
-    request = urllib.request.Request("https://www.googleapis.com/identitytoolkit/v3/relyingparty/getAccountInfo?key=+firebase_apikey, data=json_data, headers=headers)
+    request = urllib.request.Request("https://www.googleapis.com/identitytoolkit/v3/relyingparty/getAccountInfo?key="+firebase_apikey, data=json_data, headers=headers)
   		
     try:
         loader = urllib.request.urlopen(request)
